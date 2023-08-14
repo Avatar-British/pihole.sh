@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Please refer to URL below for instructions:
 # https://github.com/pi-hole/docker-pi-hole/blob/master/README.md
 
 docker run -d \
@@ -31,4 +32,5 @@ for i in $(seq 1 20); do
         exit 1
     fi
 done;
-© 2022 GitHub, Inc.
+
+© 2023 GitHub, Inc.
