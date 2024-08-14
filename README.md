@@ -92,6 +92,7 @@ sudo docker ps
 ```
 clear
 ```
+```
 sudo docker exec -it pihole bash
 ```
 #
