@@ -5,11 +5,14 @@
 
 docker run -d \
     --name pihole \
-    -p 53:53/tcp -p 53:53/udp \
+    -p 53:53/tcp \
+    -p 53:53/udp \
+    # -p 67:67/udp \ # Only required if you are using Pi-hole as your DHCP server
     -p 80:80 \
     -p 443:443 \
     -p 8080:8080 \
     -e TZ="Asia/Kuala_Lumpur" \
+    # -e WEBPASSWORD: 'set a secure password here or it will be random' \
     -v "$(pwd)/etc-pihole/:/etc/pihole/" \
     -v "$(pwd)/etc-dnsmasq.d/:/etc/dnsmasq.d/" \
     --dns=127.0.0.1 --dns=1.1.1.1 \
@@ -33,4 +36,4 @@ for i in $(seq 1 20); do
     fi
 done;
 
-© 2023 GitHub, Inc.
+# © 2023 GitHub, Inc.
