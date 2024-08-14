@@ -91,12 +91,14 @@ sudo docker ps
 ###	To access into the container, use the following commands on the host machine:
 ```
 clear
+```
 sudo docker exec -it pihole bash
 ```
 #
 ### In the PiHole container environment, use the following command to reset the PiHole admin access password:
 ```
 sudo pihole -a -p
+```
 exit
 ```
 #
