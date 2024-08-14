@@ -100,6 +100,7 @@ sudo docker exec -it pihole bash
 ```
 sudo pihole -a -p
 ```
+```
 exit
 ```
 #
